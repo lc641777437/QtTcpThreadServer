@@ -8,7 +8,7 @@ myTcpSocket::myTcpSocket(qintptr socketDescriptor, QObject *parent) : //构造�
     connect(this,&myTcpSocket::readyRead,
             [&](){
         QTime time;
-        time.start();
+        time.start(); 
         QString str(this->readAll());
 
         QElapsedTimer tm;
